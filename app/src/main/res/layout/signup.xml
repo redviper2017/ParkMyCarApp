@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    tools:context="tanzeer.parkmycar.SignUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_sign_up"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/txt_usernameDuringRegistration"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_username"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:inputType="text"/>
+        <EditText
+            android:id="@+id/txt_emailDuringRegistration"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/txt_phoneDuringRegistration"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_phone"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            tools:ignore="TextFields" />
+        <EditText
+            android:id="@+id/txt_passwordDuringRegistration"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_password"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/txt_registrationNoDuringRegistration"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_vehicle_registration_number"
+            android:drawableLeft="@drawable/ic_directions_car_black_24dp"
+            android:drawableStart="@drawable/ic_directions_car_black_24dp"
+            android:drawablePadding="10dp"/>
+        <Button
+            android:id="@+id/btn_signupFromSignUpPage"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonstylepink"
+            android:text="@string/txt_sign_up"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:drawableEnd="@drawable/ic_send_black_24dp" />
+
+        <TextView
+            android:id="@+id/txtBtn_alreadyHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/txt_already_have_an_account"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
